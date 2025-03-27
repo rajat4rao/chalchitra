@@ -1,0 +1,54 @@
+/* .introSection{
+    background-image:url('../../assets/dune_poster.jpg'), linear-gradient(to top,rgba(24, 23, 30, 100%), rgba(24,23,30,0%));
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+} */
+
+.introSection{
+    background-image:url('../../assets/dune_poster.jpg'); 
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.overlayGradient{
+    background-image: linear-gradient(to top,rgba(24, 23, 30, 100%), rgba(24,23,30,0%));
+}
+
+.overlayRightGradient{
+    background-image: linear-gradient(to right,rgba(24, 23, 30, 100%), rgba(24,23,30,0%));
+}
+
+.authBg{
+    background-image: url('../../assets/oppenheimer_poster.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+@keyframes switchToRight {
+    0%{
+        left: 0;
+    }100%{
+        left: 50%;
+    } 
+}
+
+@keyframes switchToLeft {
+    0%{
+        left: 50%;
+    }100%{
+        left: 0;
+    } 
+}
+
+.switchLeft{
+    animation: switchToLeft .2s forwards;
+}
+
+.switchRight{
+    animation: switchToRight .2s forwards;
+}

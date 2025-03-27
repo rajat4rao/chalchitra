@@ -1,0 +1,57 @@
+GET http://localhost:3000/
+
+###
+
+# ! /AUTH ROUTE
+GET http://localhost:3000/auth
+
+###
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "root",
+    "avatar": "https://picsum.photos/500/500"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "sjfskjd"
+}
+
+###
+
+POST http://localhost:3000/auth/usercheck
+Content-Type: application/json
+
+{
+    "username": "anaosdjasdj"
+}
+
+
+####
+
+GET http://localhost:3000/user/66bc7cf035514fd45f5a17f6/tv
+
+
+####
+
+GET http://localhost:3000/user/66bc7cf035514fd45f5a17f6/all
+
+
+####
+
+POST http://localhost:3000/user/66bae6590f4580e1f2d88f22/additem
+Content-Type: application/json
+
+{
+    "type": "tv",
+    "itemid": "60625"
+}
